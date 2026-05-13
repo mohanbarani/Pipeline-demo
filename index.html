@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Follow Me</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        .card{
+
+            width:380px;
+            padding:40px;
+            border-radius:20px;
+            background:white;
+            text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%{
+                transform: translateY(0px);
+            }
+
+            50%{
+                transform: translateY(-10px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+        .profile-img{
+
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            margin:auto;
+            border:5px solid #2575fc;
+
+            background-image:url('https://i.imgur.com/2DhmtJ4.png');
+            background-size:cover;
+            background-position:center;
+        }
+
+        h1{
+
+            margin-top:20px;
+            color:#333;
+            font-size:30px;
+        }
+
+        p{
+
+            margin-top:10px;
+            color:#666;
+            line-height:1.6;
+        }
+
+        .buttons{
+
+            margin-top:30px;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .btn{
+
+            text-decoration:none;
+            padding:12px 25px;
+            border-radius:50px;
+            color:white;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .instagram{
+            background: linear-gradient(45deg,#feda75,#d62976,#962fbf);
+        }
+
+        .linkedin{
+            background:#0077b5;
+        }
+
+        .btn:hover{
+
+            transform:scale(1.1);
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .footer{
+
+            margin-top:25px;
+            color:#999;
+            font-size:14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="profile-img"></div>
+
+        <h1>Follow Me 🚀</h1>
+
+        <p>
+            Do follow me on Instagram and LinkedIn 
+            for more DevOps, Cloud, Linux, AWS, and 
+            Tech Content.
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://www.instagram.com/iammohanbarani?igsh=MTc5eGxheDZueXk0dQ%3D%3D&utm_source=qr"
+               target="_blank"
+               class="btn instagram">
+               Instagram
+            </a>
+
+            <a href="https://www.instagram.com/iammohanbarani?igsh=MTc5eGxheDZueXk0dQ%3D%3D&utm_source=qr"
+               target="_blank"
+               class="btn linkedin">
+               LinkedIn
+            </a>
+
+        </div>
+
+        <div class="footer">
+            Keep Learning 💻 | Keep Growing 🌟
+        </div>
+
+    </div>
+
+</body>
+</html>
